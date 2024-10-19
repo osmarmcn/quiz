@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    
+</head>
+<body >
+
+    <div class="container">
+        <div class="quiz-header">
+            <h1>Quiz Interativo</h1>
+            <div class="score-container">
+                <div class="score-item">Pergunta: <span id="questionNumber">1</span>/<span id="totalQuestions"></span></div>
+                <div class="score-item">Acertos: <span id="score">0</span></div>
+            </div>
+        </div>
+
+        <!-- Quiz Cards -->
+        <div id="quiz-container">
+            <!-- Cards dynamically inserted here -->
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <!-- Result Screen -->
+        <div class="result-screen" id="result-screen">
+            <h2>Quiz Finalizado!</h2>
+            <p>Você acertou <span id="final-score">0</span> de <span id="total-questions"></span> perguntas!</p>
+            <button id="restart-btn">Reiniciar Quiz</button>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
